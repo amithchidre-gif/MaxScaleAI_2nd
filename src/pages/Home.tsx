@@ -532,8 +532,61 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Final CTA Section */}
+      {/* Meet The Founder Section */}
       <section className="bg-gray-800 py-20">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            className="text-center mb-16"
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+          >
+            <h2 className="text-4xl font-bold text-white mb-6">
+              Meet The Founder
+            </h2>
+          </motion.div>
+
+          <motion.div
+            className="grid lg:grid-cols-2 gap-12 items-center"
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+          >
+            <div className="flex justify-center">
+              <img
+                src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&dpr=2"
+                alt="Amith Chidre - Founder of GrowthIQX"
+                className="w-80 h-80 rounded-2xl object-cover shadow-2xl"
+              />
+            </div>
+
+            <div className="space-y-6">
+              <p className="text-xl text-gray-300 leading-relaxed">
+                Hi, I'm Amith Chidre — Founder of GrowthIQX and a Business AI Growth Consultant helping entrepreneurs unlock growth with AI-powered systems. GrowthIQX is the AI solutions platform of Sri Sai Vedh Infotech, a registered partnership firm.
+              </p>
+              <p className="text-xl text-gray-300 leading-relaxed">
+                After 12+ years of building and running businesses in the US, I've seen firsthand how the right systems can transform a struggling company into a thriving one — and how the wrong ones drain time, money, and energy.
+              </p>
+              <p className="text-xl text-gray-300 leading-relaxed">
+                That's why I started GrowthIQX: to help business owners like you cut through the noise, automate what matters, and scale with confidence using AI that actually works.
+              </p>
+              <div className="flex gap-4 pt-4">
+                <Link
+                  to="/founder"
+                  className="bg-gradient-to-r from-purple-500 to-purple-600 text-white px-8 py-3 rounded-xl text-lg font-semibold hover:from-purple-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                >
+                  Learn More About Us
+                </Link>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Final CTA Section */}
+      <section className="bg-gray-900 py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial="initial"
