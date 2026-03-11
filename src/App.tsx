@@ -7,6 +7,7 @@ import Services from './pages/Services';
 import Founder from './pages/Founder';
 import FAQ from './pages/FAQ';
 import Contact from './pages/Contact';
+import Terms from './pages/Terms';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/founder" element={<Founder />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/terms" element={<Terms />} />
         </Routes>
         <Footer />
       </div>
